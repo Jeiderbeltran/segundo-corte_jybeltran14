@@ -194,3 +194,50 @@ footer {
     background-color: #c0e8c0;
 }
 
+/* Media query para pantallas de 300 a 500px */
+@media (min-width: 300px) and (max-width: 500px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .hero-image {
+        order: -1; /* Hace que la imagen aparezca primero */
+        max-width: 100%;
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    }
+
+    .hero-content h1 {
+        color: blue; /* Cambia el color a azul */
+        text-align: center; /* Centra el texto */
+    }
+
+    .hero-content {
+        max-width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        text-align: center; /* Centra el contenido */
+    }
+}
+
+.nav-icons {
+    display: flex; /* Usamos Flexbox para alinear los íconos */
+    align-items: center; /* Centra verticalmente los íconos */
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.nav-icons i {
+    font-size: 24px; /* Tamaño de los íconos, ajústalo según necesites */
+    color: #3a3a3a; /* Color de los íconos, puedes cambiarlo si es necesario */
+}
+
+@media (max-width: 500px) {
+    .nav-icons {
+        gap: 15px; /* Reduce el espacio entre íconos en pantallas pequeñas */
+    }
+
+    .nav-icons i {
+        font-size: 15px; /* Ajusta el tamaño de los íconos para pantallas pequeñas */
+    }
+}
+
+
